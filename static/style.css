@@ -1,0 +1,99 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;    
+}
+body {
+    background-color: black;
+    color: white;
+}
+.font1 {
+    font-size: 25px;
+}
+.font2 {
+    font-size: 12px;
+}
+.font3 {
+    font-size: 20px;
+}
+.title {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid white;
+    margin-bottom: 10px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+#QA {
+    display: flex;
+    justify-content: center;
+}
+#answer {
+    width: 200px;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 7px;
+}
+form {
+    width: 80%;
+}
+.btn {
+    height: 30px;
+    width: 70px;
+    margin-top: 5px;
+    border: 3px solid white;
+    border-radius: 7px;
+    background-color: black;
+    color: white;
+}
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    font-size: larger;
+    font-weight: bolder;
+}
+#btns {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+}
+.btn2 {
+    border: 3px solid white;
+    border-radius: 10px;
+    height: 270px;
+    width: 30%;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    align-items: center;
+}
+.btn-new {
+    font-weight: bold;
+    height: 2rem;
+    width: 3.5rem;
+    border: 2px solid white;
+    border-radius: 7px;
+    background-color: black;
+    color: white;
+}
+.btn-new:hover {
+    background-color: white;
+    color: black;
+}
+#images {
+    height: 150px;
+    width: 150px;
+    margin-bottom: 1rem;
+}

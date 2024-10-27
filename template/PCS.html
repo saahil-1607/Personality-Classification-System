@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personality Classification System</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="title">
+        <a href="{{ url_for('index') }}">
+            <h1 id="PCS">Personality Classification System</h1>
+        </a>
+    </div>
+    <br>
+    <center>
+        <div id="btns" action="/" method="'POST">
+            <div class="btn2">
+                <h2>Openness</h2>
+                <img src="../static/assets/openness.png" alt="" id="images"><br>
+                <a href="{{ url_for('O') }}">
+                    <button type="button" class="btn-new">Check</button>
+                </a>
+            </div>
+            <div class="btn2">
+                <h2>Conscientiousness</h2>
+                <img src="../static/assets/conscientiousness.png" alt="" id="images"><br>
+                <a href="{{ url_for('C') }}">
+                    <button type="button" class="btn-new">Check</button>
+                </a>
+            </div>
+            <div class="btn2">
+                <h2>Extraversion</h2>
+                <img src="../static/assets/extraversion.png" alt="" id="images"><br>
+                <a href="{{ url_for('E') }}">
+                    <button type="button" class="btn-new">Check</button>
+                </a>
+            </div>
+            <div class="btn2">
+                <h2>Agreeableness</h2>
+                <img src="../static/assets/agreeableness.png" alt="" id="images"><br>
+                <a href="{{ url_for('A') }}">
+                    <button type="button" class="btn-new">Check</button>
+                </a>
+            </div>
+            <div class="btn2">
+                <h2>Neuroticism</h2>
+                <img src="../static/assets/neuroticism.png" alt="" id="images"><br>
+                <a href="{{ url_for('N') }}">
+                    <button type="button" class="btn-new">Check</button>
+                </a>
+            </div>
+            <div class="btn2">
+                <h2>Personality Classification</h2>
+                <img src="../static/assets/big5-ocean.png" alt="" id="images"><br>
+                <a href="{{ url_for('PCS') }}">
+                    <button type="button" class="btn-new">Check</button>
+                </a>
+            </div>
+        </div>
+    </center>
+</body>
+</html>

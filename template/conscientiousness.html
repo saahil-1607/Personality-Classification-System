@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personality Classification System</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="title">
+        <a href="{{ url_for('index') }}">
+            <h1 id="PCS">Personality Classification System</h1>
+        </a>
+    </div>
+    <div id="QA">        
+        <form name="conscientiousness" action="/Results2" method="post">
+            <h4 id="QA">Let's check your Conscientiousness!</h4>
+            <br>
+
+            <div class="qa">
+              <label for="c1" class="font3">How organized and detail-oriented are you in your daily life?</label><br>
+              <input type="text" name="c1" id="answer" placeholder="Rate yourself between 1 to 8" maxlength="1"
+              oninput="javascript: var num = /[1-8]/; if (this.value.match(num)) {pass} else {value=null}"><br>
+            </div>
+            <br>
+
+            <div class="qa">
+              <label for="c2" class="font3">Are you generally reliable and responsible when it comes to completing tasks?</label><br>
+              <input type="text" name="c2" id="answer" placeholder="Rate yourself between 1 to 8" maxlength="1"
+              oninput="javascript: var num = /[1-8]/; if (this.value.match(num)) {pass} else {value=null}"><br>
+            </div>
+            <br>
+
+            <div class="qa">
+              <label for="c3" class="font3">Do you prefer planning ahead?</label><br>
+              <input type="text" name="c3" id="answer" placeholder="Rate yourself between 1 to 8" maxlength="1"
+              oninput="javascript: var num = /[1-8]/; if (this.value.match(num)) {pass} else {value=null}"><br>
+            </div>
+            <br>
+
+            <div class="qa">
+              <label for="c4" class="font3">How important is punctuality to you?</label><br>
+              <input type="text" name="c4" id="answer" placeholder="Rate yourself between 1 to 8" maxlength="1"
+              oninput="javascript: var num = /[1-8]/; if (this.value.match(num)) {pass} else {value=null}"><br>
+            </div>
+            <br>
+
+            <div class="qa">
+              <label for="c5" class="font3">Are you diligent in following through with commitments and deadlines?</label><br>
+              <input type="text" name="c5" id="answer" placeholder="Rate yourself between 1 to 8" maxlength="1"
+              oninput="javascript: var num = /[1-8]/; if (this.value.match(num)) {pass} else {value=null}"><br>
+            </div>
+            <br>
+
+            <button type="submit" class="btn" id="ocean">NEXT</button>
+          </form>
+    </div>
+</body>
+</html>

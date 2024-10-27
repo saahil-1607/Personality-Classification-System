@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personality Classification System</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="title">
+        <a href="{{ url_for('index') }}">
+            <h1 id="PCS">Personality Classification System</h1>
+        </a>
+    </div>
+    <div id="QA">        
+        <form name="neuroticism" action="/Results5" method="post">
+            <h4 id="QA">Let's check your Neuroticism!</h4>
+            <br>
+
+            <div class="qa">
+              <label for="n1" class="font3">How often do you experience feelings of anxiety or worry?</label><br>
+              <input type="text" name="n1" id="answer" placeholder="Rate yourself between 1 to 8" maxlength="1"
+              oninput="javascript: var num = /[1-8]/; if (this.value.match(num)) {pass} else {value=null}"><br>
+            </div>
+            <br>
+
+            <div class="qa">
+              <label for="n2" class="font3">Are you easily upset or irritated by minor inconveniences?</label><br>
+              <input type="text" name="n2" id="answer" placeholder="Rate yourself between 1 to 8" maxlength="1"
+              oninput="javascript: var num = /[1-8]/; if (this.value.match(num)) {pass} else {value=null}"><br>
+            </div>
+            <br>
+
+            <div class="qa">
+              <label for="n3" class="font3">Do you tend to dwell on negative experiences or thoughts?</label><br>
+              <input type="text" name="n3" id="answer" placeholder="Rate yourself between 1 to 8" maxlength="1"
+              oninput="javascript: var num = /[1-8]/; if (this.value.match(num)) {pass} else {value=null}"><br>
+            </div>
+            <br>
+
+            <div class="qa">
+              <label for="n4" class="font3">How well do you cope with stress and adversity?</label><br>
+              <input type="text" name="n4" id="answer" placeholder="Rate yourself between 1 to 8" maxlength="1"
+              oninput="javascript: var num = /[1-8]/; if (this.value.match(num)) {pass} else {value=null}"><br>
+            </div>
+            <br>
+
+            <div class="qa">
+              <label for="n5" class="font3">Are you prone to mood swings or emotional instability?</label><br>
+              <input type="text" name="n5" id="answer" placeholder="Rate yourself between 1 to 8" maxlength="1"
+              oninput="javascript: var num = /[1-8]/; if (this.value.match(num)) {pass} else {value=null}"><br>
+            </div>
+            <br>
+
+            <button type="submit" class="btn" id="ocean">NEXT</button>
+          </form>
+    </div>
+</body>
+</html>

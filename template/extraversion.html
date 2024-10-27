@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personality Classification System</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="title">
+        <a href="{{ url_for('index') }}">
+            <h1 id="PCS">Personality Classification System</h1>
+        </a>
+    </div>
+    <div id="QA">        
+        <form name="extraversion" action="/Results3" method="post">
+            <h4 id="QA">Let's check your Extraversion!</h4>
+            <br>
+
+            <div class="qa">
+              <label for="e1" class="font3">Do you feel energized by social interactions?</label><br>
+              <input type="text" name="e1" id="answer" placeholder="Rate yourself between 1 to 8" maxlength="1"
+              oninput="javascript: var num = /[1-8]/; if (this.value.match(num)) {pass} else {value=null}"><br>
+            </div>
+            <br>
+
+            <div class="qa">
+              <label for="e2" class="font3">Are you outgoing and assertive in group settings?</label><br>
+              <input type="text" name="e2" id="answer" placeholder="Rate yourself between 1 to 8" maxlength="1"
+              oninput="javascript: var num = /[1-8]/; if (this.value.match(num)) {pass} else {value=null}"><br>
+            </div>
+            <br>
+
+            <div class="qa">
+              <label for="e3" class="font3">Do you prefer to blend into the background?</label><br>
+              <input type="text" name="e3" id="answer" placeholder="Rate yourself between 1 to 8" maxlength="1"
+              oninput="javascript: var num = /[1-8]/; if (this.value.match(num)) {pass} else {value=null}"><br>
+            </div>
+            <br>
+
+            <div class="qa">
+              <label for="e4" class="font3">How comfortable are you in initiating conversations with strangers?</label><br>
+              <input type="text" name="e4" id="answer" placeholder="Rate yourself between 1 to 8" maxlength="1"
+              oninput="javascript: var num = /[1-8]/; if (this.value.match(num)) {pass} else {value=null}"><br>
+            </div>
+            <br>
+
+            <div class="qa">
+              <label for="e5" class="font3">Do you prefer spending time alone?</label><br>
+              <input type="text" name="e5" id="answer" placeholder="Rate yourself between 1 to 8" maxlength="1"
+              oninput="javascript: var num = /[1-8]/; if (this.value.match(num)) {pass} else {value=null}"><br>
+            </div>
+            <br>
+
+            <button type="submit" class="btn" id="ocean">NEXT</button>
+          </form>
+    </div>
+</body>
+</html>

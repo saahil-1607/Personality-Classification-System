@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personality Classification System</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<script src="../static/numblock.js"></script>
+<body>
+    <div class="title">
+        <a href="{{ url_for('index') }}">
+            <h1 id="PCS">Personality Classification System</h1>
+        </a>
+    </div>
+    <div id="QA">        
+        <form name="agreeableness" action="/Results4" method="post">
+            <h4 id="QA">Let's check your Agreeableness!</h4>
+            <br>
+
+            <div class="qa">
+              <label for="a1" class="font3">How empathetic are you towards others' feelings and needs?</label><br>
+              <input type="text" name="a1" id="answer" placeholder="Rate yourself between 1 to 8" maxlength="1"
+              oninput="javascript: var num = /[1-8]/; if (this.value.match(num)) {pass} else {value=null}"><br>
+            </div>
+            <br>
+
+            <div class="qa">
+              <label for="a2" class="font3">Do you prioritize harmony and peace in your relationships?</label><br>
+              <input type="text" name="a2" id="answer" placeholder="Rate yourself between 1 to 8" maxlength="1"
+              oninput="javascript: var num = /[1-8]/; if (this.value.match(num)) {pass} else {value=null}"><br>
+            </div>
+            <br>
+
+            <div class="qa">
+              <label for="a3" class="font3">Are you forgiving and tolerant of others' mistakes and shortcomings?</label><br>
+              <input type="text" name="a3" id="answer" placeholder="Rate yourself between 1 to 8" maxlength="1"
+              oninput="javascript: var num = /[1-8]/; if (this.value.match(num)) {pass} else {value=null}"><br>
+            </div>
+            <br>
+
+            <div class="qa">
+              <label for="a4" class="font3">How willing are you to compromise in conflicts or disagreements?</label><br>
+              <input type="text" name="a4" id="answer" placeholder="Rate yourself between 1 to 8" maxlength="1"
+              oninput="javascript: var num = /[1-8]/; if (this.value.match(num)) {pass} else {value=null}"><br>
+            </div>
+            <br>
+
+            <div class="qa">
+              <label for="a5" class="font3">Are you generally cooperative and easy to get along with?</label><br>
+              <input type="text" name="a5" id="answer" placeholder="Rate yourself between 1 to 8" maxlength="1"
+              oninput="javascript: var num = /[1-8]/; if (this.value.match(num)) {pass} else {value=null}"><br>
+            </div>
+            <br>
+
+            <button type="submit" class="btn" id="ocean">NEXT</button>
+          </form>
+    </div>
+</body>
+</html>
